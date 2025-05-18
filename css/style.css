@@ -1,0 +1,279 @@
+/* General Style */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 7% 0 7%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: transparent;
+    transition: background-color 0.5s ease;
+}
+
+nav.scrolled {
+    background: #191919;
+    padding: 30px 7% 20px 7%;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 25px;
+}
+
+nav ul a {
+    color: #ffffffb3;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.logo{
+    color : #ffffff;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 25px;
+}
+
+button{
+    background: transparent;
+    padding: 12px 20px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 7px;
+    letter-spacing: 2px;
+}
+
+button:hover{
+    background: transparent;
+    border: 2px solid #ffffffb3;
+    transform: scale(0.9);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* General Section */
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 105px;
+}
+
+.content h3{
+    display: block;
+    width: 100%;
+    color: #ffffffb3;
+    font-size: 23px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.content h2{
+    width: 100%;
+    font-size: 180px;
+    color : #ffffff;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 25px;
+}
+
+
+.animal-img{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.animal-img img{
+    width: 85%;
+    height: auto;
+}
+
+/* Specific backgrounds */
+
+.animal-section {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+    position: relative;
+}
+
+.okapi {
+    background-image: url(../img/background/ForestOkapi.webp);
+}
+
+.crocodile {
+    background-image: url(../img/background/RiverCrocodrile.webp);
+}
+
+.shark {
+    background-image: url(../img/background/OceanShark.webp);
+}
+
+.woodpecker {
+    background-image: url(../img/background/ForestWoodpecker.webp);
+}
+
+.woodpecker-img{
+    width: 37%;
+}
+
+/* Animation */
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+    nav {
+        padding: 15px 5%;
+    }
+
+    nav.scrolled {
+        background: #191919;
+        padding: 15px 7% 10px 7%;
+    }
+
+    nav ul li {
+        padding: 0 15px;
+    }
+
+    nav ul a {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    .logo img {
+        width: 160px;
+    }
+
+    button {
+        padding: 10px 16px;
+        font-size: 12px;
+    }
+
+    .content {
+        padding: 80px 40px;
+    }
+
+    .content h3 {
+        font-size: 20px;
+        letter-spacing: 7px;
+    }
+
+    .content h2 {
+        font-size: 115px;
+        letter-spacing: 15px;
+    }
+
+    .animal-img img{
+        width: 54vh;
+    }
+
+    .animal-img {
+        top: 64%;
+    }
+
+    .woodpecker-img {
+        left: 35%;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    nav {
+        padding: 15px 2%;
+        flex-direction: column;
+    }
+
+    nav.scrolled {
+        background: #191919;
+        padding: 15px 1% 10px 1%
+    }
+
+    nav ul {
+        margin-top: 5px;
+    }
+
+    nav ul li {
+        padding: 0 10px;
+    }
+
+    nav ul a {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .logo img {
+        width: 140px;
+    }
+
+    button {
+        padding: 8px 14px;
+        font-size: 11px;
+        margin-top: 15px;
+    }
+
+    .content {
+        padding: 50% 20px;
+    }
+
+    .content h3 {
+        font-size: 16px;
+        letter-spacing: 5px;
+    }
+
+    .content h2 {
+        font-size: 50px;
+        letter-spacing: 10px;
+    }
+
+    .animal-img {
+        top: 65%;
+        left: 36%;
+    }
+
+    .animal-img img {
+        width: 130%;
+    }
+
+    .woodpecker-img {
+        left: 30%;
+        width: 60%;
+    }
+}
