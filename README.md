@@ -35,6 +35,6 @@ Below is an example of the webpage
 
 ## Links 🌐
 
-<a href="https://animalsos-uicn.netlify.app"><h3>Live Demo 🛜</h4></a>
+<a href="https://animalsos-uicn.netlify.app">Live Demo 🛜</a>
 
-<a href="https://www.iucnredlist.org/es"><h3>IUCN Red List 🐾</h3></a>
+<a href="https://www.iucnredlist.org/es">IUCN Red List 🐾</a>
